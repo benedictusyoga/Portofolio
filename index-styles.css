@@ -12,7 +12,7 @@ body{
 
 /* Navigation Bar */
 .navbar{
-    width: 60%;
+    width: 70%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -69,11 +69,67 @@ body{
 .navbar ul li a:hover{
     color: #D138D6;
     font-weight: 700;
-    background-color: #1717176b;
+    /* background-color: #1717176b;
     padding: 0.7rem;
-    border-radius: 50px;
+    border-radius: 50px; */
+}
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 
+/* Medias */
+@media (max-width: 768px){
+    .list a{
+        display:none;
+    }
+    .hamburger{
+        display: block;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+    }
+    .hamburger.active{
+        transform: rotate(90deg);
+    }
+   
+    .list{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        max-height: 300px;
+        opacity: 1;
+        /* transition: 0.5s ease-in-out; */
+    }
+    .list.active{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        top: 50%;
+        visibility: visible;
+        opacity: 1;
+        background-color: #222222;
+        padding: none;
+        border-radius: 30px;
+    }
+    .list a{
+        flex-direction: column;
+        display: none;
+        background-color: #222222;
+    }
+    .list.active a{
+        display:block;
+        text-align: right;
+
+    }
+    
+    
+    
+    
+}
 
 
 
