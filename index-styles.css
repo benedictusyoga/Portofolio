@@ -89,46 +89,61 @@ body{
     }
     .hamburger{
         display: block;
+        position: absolute;
+        right: 2rem;
         cursor: pointer;
         transition: 0.2s ease-in-out;
     }
     .hamburger.active{
         transform: rotate(90deg);
     }
-   
+    
     .list{
         display: flex;
         flex-direction: column;
         align-items: flex-end;
         max-height: 300px;
         opacity: 1;
-        /* transition: 0.5s ease-in-out; */
+    }
+    .navbar.active ul li{
+        margin: 0px;
+        margin-bottom: 0.5rem;
+        text-align: right;
+        align-self: self-end;
     }
     .list.active{
         display: flex;
+        position: absolute;
+        right: 1.5rem;
+        /* margin-top: 5rem; */
         flex-direction: column;
         align-items: flex-start;
-        top: 50%;
+        top: 4.5rem;
         visibility: visible;
         opacity: 1;
         background-color: #222222;
-        padding: none;
-        border-radius: 30px;
+        /* padding: 2rem; */
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 4rem;
+        padding-right: 1rem;
+        border-radius: 10px;
     }
     .list a{
-        flex-direction: column;
-        display: none;
-        background-color: #222222;
+        /* flex-direction: column; */
+        /* display: none; */
+        /* background-color: #222222; */
+        /* text-align: right; */
     }
     .list.active a{
         display:block;
-        text-align: right;
+        /* text-align: right; */
 
     }
     
     
     
-    
+
 }
 
 
