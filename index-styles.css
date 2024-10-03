@@ -1,0 +1,91 @@
+/* Initialization */
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    background-color: #171717;
+    overflow-x: hidden;
+}
+
+/* Navigation Bar */
+.navbar{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    flex-direction: row;
+    background-color: #222222;
+    z-index: 100;
+    top: 1rem;
+    margin-top: 3rem;
+    position: fixed;
+    border-radius: 40px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 4rem;
+}
+.navbar img{
+    width: 3rem;
+    display: flex;
+    align-items: center;
+    margin-left: 1.5rem;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+.navbar img:hover{
+    transform: scale(1.2);
+    background-color: #1717176b;
+    padding: 0.6rem;
+    border-radius: 40px;
+}
+.navbar ul{
+    list-style: none;
+    display: flex;
+    padding-left: 1%;
+    padding-right: 5%;
+}
+.navbar ul li{
+    margin-left: 20px;
+}
+.navbar ul li a{
+    color: white;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 200;
+    font-size: medium;
+    text-align: left;
+    margin: 0.2rem;
+    transition: 0.2s;
+}
+.navbar ul li a:hover{
+    color: #D138D6;
+    font-weight: 700;
+    background-color: #1717176b;
+    padding: 0.7rem;
+    border-radius: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.DELETETHIS{
+    margin-top: 5000px;
+}
