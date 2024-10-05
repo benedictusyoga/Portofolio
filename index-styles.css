@@ -83,6 +83,18 @@ body{
 }
 
 /* Home Page */
+.line1{
+    color: #363636;
+    position: absolute;
+    margin-top: -25%;
+    width: 50%;
+}
+.line2{
+    color: #363636;
+    position: absolute;
+    margin-top: 25%;
+    width: 50%;
+}
 .homepage{
     display: flex;
     justify-content: center;
@@ -121,6 +133,7 @@ body{
 }
 .righttext{
     padding-left: 20px;
+    /* justify-content: center; */
     animation-delay: 3s;
 }
 .righttext p{
@@ -133,7 +146,6 @@ body{
 .lefttext h1:hover{
     transform: translateY(-3%);
 }
-
 @keyframes floatUp {
     from {
         opacity: 0;
@@ -204,24 +216,20 @@ body{
         padding-top: 50%;
         padding-bottom: 50%;
     }
-    
     .hello h1, .name h1 {
         text-align: center; /* Center-align text for smaller screens */
     }
-
     .name h1{
         font-size: 8vw;
     }
     .name{
         align-items: center; 
     }
-    
     .hello h1{
         font-size: 7vw;
         /* margin-bottom: 1px; */
         padding-bottom: 0.3rem;
     }
-    
     .lefttext{
         margin-bottom: 0.5rem;
         width: 120%;
@@ -230,11 +238,10 @@ body{
         padding-left: 0; /* Remove padding since the text is stacked */
         text-align: center; /* Optional: Center-align the paragraph text */
         /* padding-right: -100%; */
-      }
-    
-      .righttext p {
+    }
+    .righttext p {
         font-size: 2.3vw; /* Adjust font size for readability */
-      }
+    }
 
 }
 
