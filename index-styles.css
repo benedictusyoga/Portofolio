@@ -97,7 +97,7 @@ body{
     flex: 1;
     opacity: 0;
     transform: translateY(50px);
-    animation: floatUp 2s forwards;
+    animation: floatUp 4s forwards;
 }
 .hello h1{
     text-align: right;
@@ -110,19 +110,24 @@ body{
     font-family: "Montserrat", sans-serif;
     font-size:2.9vw;
 }
+.lefttext{
+    animation-delay: 1s;
+}
 .lefttext h1{
-    animation-delay: 0.5s;
+    /* animation-delay: 1s; */
     transition-duration: 0.5s;
+    /* transition-delay: 1s; */
     transition-timing-function: ease-in-out;
 }
 .righttext{
     padding-left: 20px;
-    animation-delay: 1s;
+    animation-delay: 3s;
 }
 .righttext p{
     font-family: "Montserrat", sans-serif;
+    /* animation-delay: 5s; */
     font-weight: 200;
-    font-size: 1vw;
+    font-size: 1.2vw;
     text-align: justify;
 }
 .lefttext h1:hover{
@@ -131,8 +136,9 @@ body{
 
 @keyframes floatUp {
     from {
-      opacity: 0;
-      transform: translateY(50px);
+        opacity: 0;
+        /* delay */
+        transform: translateY(50px);
     }
     to {
       opacity: 1;
@@ -192,35 +198,42 @@ body{
     /* Home Page */
     .homepage {
         flex-direction: column; /* Stack the content vertically */
-        padding-left: 10%; /* Adjust padding for smaller screens */
+        padding-left: 10%; 
         padding-right: 10%;
         height: auto;
         padding-top: 50%;
         padding-bottom: 50%;
-      }
+    }
     
-      .hello h1, .name h1 {
+    .hello h1, .name h1 {
         text-align: center; /* Center-align text for smaller screens */
-      }
+    }
 
-      .name h1{
-        font-size: 6vw;
-      }
-
-      .hello h1{
-        font-size: 5vw;
-      }
+    .name h1{
+        font-size: 8vw;
+    }
+    .name{
+        align-items: center; 
+    }
     
-      .lefttext{
+    .hello h1{
+        font-size: 7vw;
+        /* margin-bottom: 1px; */
+        padding-bottom: 0.3rem;
+    }
+    
+    .lefttext{
         margin-bottom: 0.5rem;
-      }
-      .righttext {
+        width: 120%;
+    }
+    .righttext {
         padding-left: 0; /* Remove padding since the text is stacked */
         text-align: center; /* Optional: Center-align the paragraph text */
+        /* padding-right: -100%; */
       }
     
       .righttext p {
-        font-size: 1.5vw; /* Adjust font size for readability */
+        font-size: 2.3vw; /* Adjust font size for readability */
       }
 
 }
