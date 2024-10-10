@@ -1,4 +1,7 @@
 /* Initialization */
+html{
+    scroll-behavior: smooth;
+}
 *{
     margin: 0;
     padding: 0;
@@ -123,17 +126,20 @@ body{
     text-align: right;
     font-family: "Inter", sans-serif;
     font-size:4vw;
-    margin-bottom: -6%;
+    margin-bottom: -8%;
 }
 .name{
     text-transform: uppercase;
     
 }
 .name h1{
-    text-align: right;
+    paint-order: stroke fill;
+    text-align: end;
+    padding-right: 4%;
     font-family: "Montserrat", sans-serif;
+    letter-spacing: -1.5vw;
     font-weight: 1000;
-    font-size:10vw;
+    font-size:13vw;
 }
 .lefttext{
     animation-delay: 1s;
@@ -146,14 +152,15 @@ body{
     transition-timing-function: ease-out;
 }
 .righttext{
-    margin-left: 1rem;
-    margin-right: 10rem;
+    margin-left: 2%;
+    margin-right: 2%;
     /* justify-content: center; */
     /* vertical-align: bottom; */
     animation-delay: 2s;
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     font-size: 1.6vw;
+    margin-top: -3%;
     /* line-height: -50%; */
     /* width: 20%; */
 }
@@ -168,7 +175,8 @@ body{
 .righttext p{
     display: inline;
     /* top: 5rem; */
-    margin-top: 2%;
+    margin-top: -15%;
+    /* margin-bottom: 50%; */
     /* animation-delay: 5s; */
     text-align: justify;
 }
@@ -197,6 +205,7 @@ body{
     flex-wrap: wrap;
     /* justify-content: space-; */
     font-family: "Montserrat", sans-serif;
+    color: #d2d2d2;
 
 }
 .aboutphoto{
@@ -205,22 +214,22 @@ body{
 }
 .aboutphoto img{
     object-fit: contain;
-    width: 100%;
+    margin-left: 20%;
+    width: 30vw;
     display: block;
 }
 .abouttitle.hidden h1 {
     opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 2s ease-in-out, transform 2.5s ease-in-out;
-}
-
+    transform: translateY(75px);
+    transition: opacity 2s ease-in-out, transform 2s cubic-bezier(0.165, 0.84, 0.44, 1);
+}   
 .abouttitle.show h1{
     opacity: 1;
     transform: translateY(0);
 }
 .abouttitle h1{
     font-weight: 800;
-    margin-top: -4% ;
+    margin-top: -3%;
     z-index: -5;
     position: absolute;
     /* display: block; */
@@ -233,12 +242,26 @@ body{
     margin-top: 4%;
 }
 .aboutbody{
-    margin-top: 10%;
-    padding-right: 15%;
-    padding-left: 5%;
+    margin-top: 13%;
+    padding-right: 2%;
+    padding-left: 8%;
+}
+.aboutbody h4{
+    /* text-align: right; */
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0.1vw;
+    position: absolute;
+    z-index: -10;
+    margin-left: -2%;
+    margin-top: -1.5%;
+    font-size: 2.7vw;
+    font-weight: 800;
+    color: #d2d2d20f;
 }
 .aboutbody p{
-    font-size: 1.2vw;
+    text-align: justify;
+    font-size: 1vw;
+    line-height: 150%;
 }
 
 

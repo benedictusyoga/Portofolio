@@ -12,16 +12,29 @@ function toggleMenu() {
 };
 
 document.addEventListener("DOMContentLoaded", () => {
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('show');
-            } else {
-                entry.target.classList.remove('show');
-            }
-        });
-    });
-
     const aboutTitle = document.querySelector('.abouttitle');
-    observer.observe(aboutTitle);
+    const aboutSection = document.querySelector('#about');
+
+    // Function to check if the #about section is within the viewport (with some buffer)
+    function checkVisibility() {
+        const rect = aboutSection.getBoundingClientRect();
+        const buffer = 500; // Adjust this value as needed for when you want the title to disappear
+
+        if (rect.top <= buffer && rect.bottom - buffer >= 0) {
+            aboutTitle.classList.add('show');
+        } else {
+            aboutTitle.classList.remove('show');
+        }
+    }
+
+    // Trigger checkVisibility on scroll
+    window.addEventListener('scroll', checkVisibility);
+
+    // Ensure visibility is checked initially on page load
+    setTimeout(checkVisibility, 50); // Small delay to ensure layout is ready
 });
+
+
+
+
+
