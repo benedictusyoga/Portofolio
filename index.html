@@ -1,68 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Style Sheet -->
-    <link rel="stylesheet" href="index-styles.css">
+    <link rel="stylesheet" href="styles/index-styles.css" />
+    <link rel="stylesheet" href="styles/index-styles-tab.css" />
 
     <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" 
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Title -->
     <title>Portofolio - Benedictus Yogatama F.S.</title>
-    
-</head>
-<body>
+  </head>
+  <body>
     <!-- Navigation Bar -->
     <nav class="navbar">
-        <div class="logo">
-            <a href="#home"><img src="images/logo2.png" alt="Yoga's Logo"></a>
-        </div>
-        <div class="hamburger" onclick="toggleMenu()">☰</div>
-        <ul class="list">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#connect">Connect</a></li>
-        </ul>
+      <div class="logo">
+        <a href="#home"><img src="images/logo2.png" alt="Yoga's Logo" /></a>
+      </div>
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+      <ul class="list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#connect">Connect</a></li>
+      </ul>
     </nav>
 
     <!-- Home Page -->
     <div id="home" class="homepage">
-        <hr class="line1">
-        <div class="lefttext">
-            <div class="hello">
-                <h1>Hello There! I'm</h1>
-            </div>
-            <div class="name">
-                <h1>Benedictus Yogatama</h1>
-            </div>
+      <hr class="line1" />
+      <div class="lefttext">
+        <div class="hello">
+          <h1>Hello There! I'm</h1>
         </div>
-        <div class="righttext">
-            <p>I am a programmer with a specialization in Web Development and UI/UX Design. With my background of front-end development and design patterns, I am able to build user-friendly websites that prioritizes accessibility and performance.</p>
+        <div class="name">
+          <h1>YOGA!</h1>
         </div>
-        <hr class="line2">
-     </div>
+      </div>
+      <div class="righttext">
+        <p>I am a programmer with a specialization in</p>
+        <span class="animate"><b>Web Development</b></span>
+        <p>and</p>
+        <p class="animate"><b>UI/UX Design</b>.</p>
+      </div>
+      <hr class="line2" />
+    </div>
 
-     <div id="about" class="aboutpage">
-        
-     </div>
-
-
+    <div id="about" class="aboutpage">
+      <div class="abouttitle hidden">
+        <h1>About Me</h1>
+      </div>
+      <div class="aboutright">
+        <div class="aboutphoto">
+          <img src="images/1_test.png" alt="Self-Portrait" />
+        </div>
+        <div class="aboutbody">
+          <p>
+            Hi! I am Yoga, an undergraduate Computer Science student from Binus
+            University Indonesia. In Uni, I learnt Software Engineering and
+            studied the basics of Software Development Methodologies. This
+            results in my ability to design and develop software applications by
+            utilising the Agile Methodology. Because of my graphic design
+            backgrounds, I specialize in Web Development and UI/UX Design. I am
+            able to combine the functional elements of a website and the
+            aesthetic elements of a website to create a visually appealing and
+            user-friendly platform.
+          </p>
+        </div>
+      </div>
+    </div>
 
     <div class="DELETETHIS">
-        <h1>
-            DELETE THIS
-        </h1>
+      <h1>DELETE THIS</h1>
     </div>
 
     <!-- Scripts -->
     <script src="index-script.js"></script>
-
-</body>
+  </body>
 </html>

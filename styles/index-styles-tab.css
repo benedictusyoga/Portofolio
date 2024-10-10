@@ -1,0 +1,85 @@
+@media (max-width: 768px){
+    /* Navigation Bar */
+    .list a{
+        display:none;
+    }
+    .hamburger{
+        display: block;
+        position: absolute;
+        right: 2rem;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+    }
+    .hamburger.active{
+        transform: rotate(90deg);
+    }
+    .list{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        max-height: 300px;
+        opacity: 1;
+    }
+    .navbar.active ul li{
+        margin: 0px;
+        margin-bottom: 0.5rem;
+        text-align: right;
+        align-self: self-end;
+    }
+    .list.active{
+        display: flex;
+        position: absolute;
+        right: 1.5rem;
+        flex-direction: column;
+        align-items: flex-start;
+        top: 4.5rem;
+        visibility: visible;
+        opacity: 1;
+        background-color: #222222;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 4rem;
+        padding-right: 1rem;
+        border-radius: 10px;
+    }
+    .list.active a{
+        display:block;
+    }
+    
+    /* Home Page */
+    .homepage {
+        flex-direction: column; /* Stack the content vertically */
+        padding-left: 10%; 
+        padding-right: 10%;
+        height: auto;
+        padding-top: 50%;
+        padding-bottom: 50%;
+    }
+    .hello h1, .name h1 {
+        text-align: center; /* Center-align text for smaller screens */
+    }
+    .name h1{
+        font-size: 8vw;
+    }
+    .name{
+        align-items: center; 
+    }
+    .hello h1{
+        font-size: 7vw;
+        /* margin-bottom: 1px; */
+        padding-bottom: 0.3rem;
+    }
+    .lefttext{
+        margin-bottom: 0.5rem;
+        width: 120%;
+    }
+    .righttext {
+        padding-left: 0; /* Remove padding since the text is stacked */
+        text-align: center; /* Optional: Center-align the paragraph text */
+        /* padding-right: -100%; */
+    }
+    .righttext p {
+        font-size: 2.3vw; /* Adjust font size for readability */
+    }
+
+}

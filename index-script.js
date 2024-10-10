@@ -10,3 +10,18 @@ function toggleMenu() {
     const navbar = document.querySelector('.navbar');
     navbar.classList.toggle('active');
 };
+
+document.addEventListener("DOMContentLoaded", () => {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+            } else {
+                entry.target.classList.remove('show');
+            }
+        });
+    });
+
+    const aboutTitle = document.querySelector('.abouttitle');
+    observer.observe(aboutTitle);
+});
