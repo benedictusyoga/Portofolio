@@ -345,6 +345,18 @@ body {
     /* padding-left: 1%; */
 }
 
+.projectstitle p {
+    /* position: absolute; */
+    margin-top: 15vw;
+    margin-right: 2%;
+    font-size: 1.5vw;
+    font-weight: 800;
+    opacity: 0.2;
+    font-style: italic;
+    letter-spacing: -0.1vw;
+    text-align: right;
+}
+
 .projectstitle h1 {
     font-weight: 800;
     margin-left: -2vw;
@@ -374,7 +386,7 @@ body {
     display: flex;
     flex-direction: column;
     /* gap: -10vw; */
-    margin-top: 17%;
+    margin-top: 30%;
 }
 
 .projectcontainer img {
@@ -386,15 +398,14 @@ body {
     transition: transform 0.1s cubic-bezier(0.165, 0.84, 0.44, 1);
     /* padding-top: 10vh; */
     /* padding-bottom: 10vh; */
-    margin-top: 4vh;
+    margin-top: -15vh;
 }
 
-
-.projectcontainer img:hover {
-    transform: scale(1.02);
+.project1img:hover {
+    /* transform: scale(1.01); */
+    transform:translateY(-1%);
     border-radius: 50px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
 }
 
 /* Row of projects */
@@ -406,6 +417,7 @@ body {
     height: auto;
     padding: 2vw;
     margin-bottom: 30px;
+    margin-top: -2vw;
     /* margin-top: 5vh; */
     /* gap: 50px; */
 }
@@ -419,7 +431,7 @@ body {
     background-color: #f0f0f0;
     /* flex-basis: 48%; */
     /* Placeholder background color */
-    height: 48vw;
+    height: 30vw;
     /* Adjust height to fit your design */
     border-radius: 50px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -448,35 +460,113 @@ body {
     font-size: 3vh;
 } */
 
-.caption{
-    margin-top: 2vh;
-    letter-spacing: 0.3vw;
-    font-family: 'Montserrat', sans-serif;
-    /* font-family: "Libre Baskerville", serif; */
-    font-style: italic;
-    font-weight: 1000; /* Bold text for visibility */
-    color: #363636; /* Caption text color */
-    text-align: left; /* Center text */
-    font-size: 6vw; /* Font size can be adjusted */
-    /* background-color: #333; */
-    /* padding: 1rem; */
-    border-radius: 0px 0px 30px 30px;
-    justify-content: center;
+.projectinfo {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    align-items: center;
+    width: 55%;
+    /* Ensures the content spans the width of the project div */
+    /* margin-top: 1vh; */
+    /* padding: 0 1vw; */
+    /* padding-top: 0.6vw; */
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    /* Add padding if needed for spacing */
 }
 
-.project1 span{
-    margin-top: -2vh;
-    color: #363636;
-    /* font-style: italic; */
-    font-weight: 300;
-    letter-spacing: normal;
-    font-size: 1.2vw;
-    margin-bottom: 5vh;
+.projecttext {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    /* align-items: center; */
+    gap: 2.1vw;
+    /* margin-top: 0.8vw; */
+    /* margin-bottom: 2vw; */
+    /* margin-left: 5vh; */
+    /* margin-top: 1vw; */
+    /* margin-top: 2vh; */
+    /* margin-bottom: 2vh; */
 }
+
+.caption {
+    /* margin-top: 1vh; */
+    letter-spacing: -0.3vw;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3vw;
+    /* font-family: "Libre Baskerville", serif; */
+    font-style: italic;
+    font-weight: 1000;
+    /* Bold text for visibility */
+    color: #363636;
+    /* Caption text color */
+    /* text-align: left; */
+    /* Center text */
+    /* font-size: 5vw; */
+    /* Font size can be adjusted */
+    /* background-color: #333; */
+    /* padding: 1rem; */
+    /* border-radius: 0px 0px 30px 30px; */
+    /* justify-content: center; */
+}
+
+.projecttext span {
+    font-weight: 300;
+    font-size: 0.8vw;
+    /* font-size: 5vw; */
+    color: #363636;
+    margin-top: -2vw;
+    /* margin-bottom: 1.5vw; */
+}
+
+/* Button Styling */
+.projectbutton {
+    display: inline-block;
+    /* justify-self: center ; */
+    padding: 10px 40px;
+    background-color: #363636;
+    box-shadow: 0 10px 20px #00000068;
+    /* background: rgb(207, 244, 210); */
+    /* background: linear-gradient(180deg, rgba(207, 244, 210, 1) 0%, rgba(132, 215, 173, 1) 80%); */
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1vw;
+    font-weight: 300;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    margin-left: 1vw;
+}
+
+/* Button Hover Effect */
+.projectbutton:hover {
+    background-color: #D138D6;
+    box-shadow: 0 2px 10px #00000068;
+    /* transform: scale(0.98); */
+    transform:  translateY(7%);
+}
+
+.project1 .logo {
+    width: 10vw;
+    background: rgb(207, 244, 210);
+    background: linear-gradient(180deg, rgba(207, 244, 210, 1) 0%, rgba(132, 215, 173, 1) 80%);
+    /* Override width property */
+    height: auto;
+    padding: 12px;
+    /* border-radius: 20px; */
+    /* Set specific height for the logo */
+    border-radius: 50px;
+    /* Remove the border-radius from the general rule */
+    transition: none;
+    /* Remove transition and hover effect */
+    margin-top: 0;
+    /* Adjust margin if necessary */
+}
+
 
 .project1 {
     /* background-color: #d2d2d2; */
-    flex-basis: 60%;
+    flex-basis: 55%;
 }
 
 /* .project1 img {
@@ -484,7 +574,7 @@ body {
 } */
 
 .project2 {
-    flex-basis: 37%;
+    flex-basis: 43%;
     /* background-color: #50e3c2; */
 }
 

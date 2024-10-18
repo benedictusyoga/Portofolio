@@ -61,33 +61,24 @@ document.addEventListener("DOMContentLoaded", () => {
   const projectImages = document.querySelectorAll(".projectcontainer img");
 
   projectImages.forEach((img) => {
-    const staticSrc = img.getAttribute("src");
-    const gifSrc = img.getAttribute("data-gif");
+    // Check if the image has the 'logo' class, skip the GIF effect for those
+    if (!img.classList.contains("logo")) {
+      const staticSrc = img.getAttribute("src");
+      const gifSrc = img.getAttribute("data-gif");
 
-    // Add event listener for mouse hover on individual image
-    img.addEventListener("mouseenter", () => {
-      img.setAttribute("src", gifSrc); // Switch to GIF when the specific image is hovered
-    });
+      // Add event listener for mouse hover on individual image
+      img.addEventListener("mouseenter", () => {
+        img.setAttribute("src", gifSrc); // Switch to GIF when the specific image is hovered
+      });
 
-    // Add event listener for mouse leave on individual image
-    img.addEventListener("mouseleave", () => {
-      img.setAttribute("src", staticSrc); // Revert to static image when mouse leaves the specific image
-    });
+      // Add event listener for mouse leave on individual image
+      img.addEventListener("mouseleave", () => {
+        img.setAttribute("src", staticSrc); // Revert to static image when mouse leaves the specific image
+      });
 
-    // Preload GIFs to avoid delay on hover
-    const preloadGif = new Image();
-    preloadGif.src = gifSrc;
-  });
-
-  // Add click event listener for each project div
-  const projectDivs = document.querySelectorAll(".projectcontainer div");
-
-  projectDivs.forEach((div) => {
-    div.addEventListener("click", () => {
-      const url = div.getAttribute("data-url"); // Get the URL from the data attribute
-      if (url) {
-        window.open(url, "_blank"); // Open the link in a new tab
-      }
-    });
+      // Preload GIFs to avoid delay on hover
+      const preloadGif = new Image();
+      preloadGif.src = gifSrc;
+    }
   });
 });
