@@ -56,6 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Initialize scroll triggers for About and Projects headings
   initScrollTrigger(".abouttitle", "#about", 500);
   initScrollTrigger(".projectstitle", "#projects", 500);
+  initScrollTrigger(".connecttitle", "#connect", 1000);
 
   // Function to handle GIF hover effect for individual project images
   const projectImages = document.querySelectorAll(".projectcontainer img");

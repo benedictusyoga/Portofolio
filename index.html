@@ -190,12 +190,33 @@
                 <span>Learn more of my projects here</span>
                 <!-- <hr> -->
               </div>
-              <a href="https://google.com" class="projectbutton"
-                >My Projects</a
-              >
+              <a href="https://google.com" class="projectbutton">My Projects</a>
             </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="connectpage" id="connect">
+      <div class="connecttitle hidden">
+        <h1><span>Contact</span> Me</h1>
+      </div>
+      <div class="connectcontainer">
+        <form name="submit-to-google-sheet">
+          <h3>Send Me a Message!</h3>
+          <input type="text" name="name" placeholder="Your Name" />
+          <input type="email" name="email" placeholder="Your Email" />
+          <textarea
+            name="message"
+            id=""
+            placeholder="Your Message"
+            rows="5"
+          ></textarea>
+          <div class="button-container">
+            <button type="submit" name="submit-btn">Send Messages</button>
+            <span id="msg"></span>
+          </div>
+        </form>
       </div>
     </section>
 
@@ -205,6 +226,7 @@
     </div>
 
     <!-- Scripts -->
-    <script src="index-script.js"></script>
+    <script src="scripts/index-script.js"></script>
+    <script src="scripts/forms-handler.js"></script>
   </body>
 </html>
