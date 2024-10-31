@@ -7,6 +7,10 @@
     <!-- Style Sheet -->
     <link rel="stylesheet" href="styles/index-styles.css" />
     <link rel="stylesheet" href="styles/index-styles-tab.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -24,6 +28,12 @@
     <nav class="navbar">
       <div class="logo">
         <a href="#home"><img src="images/logo2.png" alt="Yoga's Logo" /></a>
+        <a
+          href="assets/Creative CV - Benedictus Yogatama Favian Satyajati.pdf"
+          download="Yoga_CV"
+          class="download-cv-btn"
+          ><i class="fas fa-download"></i><span>Download CV</span></a
+        >
       </div>
       <div class="hamburger" onclick="toggleMenu()">☰</div>
       <ul class="list">
@@ -46,11 +56,12 @@
         </div>
       </div>
       <div class="righttext">
-        <p>I am a programmer with a specialization in</p>
-        <span class="animate"><b>Web Development</b></span>
-        <p>and</p>
-        <p class="animate"><b>UI/UX Design</b>.</p>
+        <p>
+          I am a programmer with a specialization in <br />
+          <span class="typewriter"></span>.
+        </p>
       </div>
+
       <!-- <hr class="line2" /> -->
     </div>
 
@@ -65,48 +76,69 @@
         </div>
         <div class="aboutbody">
           <hr class="line1" />
-          <h4>Introduction</h4>
+          <!-- <h4>Introduction</h4> -->
           <!-- <hr>  -->
           <p>
-            Hi! I’m
-            <span class="animate"
-              ><b>Benedictus Yogatama Favian Satyajati</b></span
-            >, but you can call me Yoga. I’m an undergraduate Computer Science
-            student with a focus on
-            <span class="animate"><b>Software Engineering</b></span> and
-            <span class="animate"><b>Web Development</b></span
-            >. My passion lies in <i>blending functionality</i> and design to
-            create digital experiences that are both <i>intuitive</i> and
-            <i> visually appealing </i>.
+            Hi! I am an undergraduate
+            <span><b>Computer Science</b></span> student specializing in
+            <span><b>Software Engineering</b></span> and
+            <span><b>Web Development</b></span
+            >, with a strong focus on <span><b>UI/UX Design</b></span
+            >. Leveraging a <i>graphic design</i> background, I craft digital
+            experiences that are both functional and visually appealing,
+            seamlessly blending <span><b>design</b></span> and
+            <span><b>development</b></span
+            >. Proficient in Software Development Methodologies, including
+            Agile, I apply my skills across academic and personal projects to
+            create user-centric web applications that align with business goals
+            and user needs.
           </p>
-          <br />
-          <br />
-          <!-- <br /> -->
-          <h4>Skills</h4>
-          <p>
-            With a <i>background</i> in <i>graphic design</i>, I specialize in
-            <span class="animate"><b>UI/UX Design</b></span
-            >. My unique skill set allows me to combine the functional elements
-            of a website with aesthetic principles, resulting in
-            <span class="animate"><b>user-friendly platforms</b></span> that
-            look great and work seamlessly. I’m also proficient in Software
-            Development Methodologies and have experience implementing the
-            <span class="animate"> <b>Agile method</b> </span> at an
-            organizational level to drive effective project development.
-          </p>
-          <br />
-          <br />
-          <!-- <br /> -->
-          <h4>Experience</h4>
-          <p>
-            As a student, I’ve applied my skills in various <i>academic</i> and
-            <i>personal projects</i>, focusing on building web applications that
-            prioritize <span class="animate"><b>user experience</b></span
-            >. My ability to work across both design and development allows me
-            to see projects from concept to completion, ensuring that the final
-            product aligns with both business goals and user needs.
-          </p>
-          <br />
+          <div class="tab-section">
+            <div class="tab-menu">
+              <button
+                class="tab-link active"
+                onclick="openTab(event, 'skills')"
+              >
+                Skills
+              </button>
+              <button class="tab-link" onclick="openTab(event, 'experience')">
+                Experience
+              </button>
+              <button class="tab-link" onclick="openTab(event, 'education')">
+                Education
+              </button>
+            </div>
+            <div class="tab-content">
+              <div id="skills" class="tab-item active">
+                <p>Details about your skills...</p>
+              </div>
+              <div id="experience" class="tab-item">
+                <p>Details about your experience...</p>
+              </div>
+              <div id="education" class="tab-item">
+                <!-- <p>Details about your education...</p> -->
+                <div class="education-timeline">
+                  <div class="timeline-container">
+                    <div class="timeline-item">
+                      <div class="date">2019 - 2022</div>
+                      <div class="info">
+                        <strong>Natural Sciences</strong> - SMA Tarakanita G.S.
+                        <p>Achieved 14th Parallel Ranking</p>
+                      </div>
+                    </div>
+                    <div class="timeline-line"></div>
+                    <div class="timeline-item">
+                      <div class="date">2022 - Current</div>
+                      <div class="info">
+                        <strong>Computer Science</strong> - Binus University
+                        <p>Current GPA <strong>3.77</strong></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           <hr class="line2" />
         </div>
       </div>
@@ -119,7 +151,7 @@
         <!-- <p>[ Hover over the images to see an overview of each project ]</p> -->
       </div>
       <div class="tips">
-        <h1>TIPS!</h1>
+        <h1>TIPS!<i class="fa-solid fa-bell" style="margin-left: 1%"></i></h1>
         <p>Hover over the images to see an overview of each project</p>
       </div>
       <div class="projectcontainer">
@@ -138,9 +170,12 @@
                 <span>A mental health companion app.</span>
                 <!-- <hr> -->
               </div>
-              <a href="https://google.com" class="projectbutton"
-                >View Project</a
-              >
+              <a
+                href="https://tr.ee/JXMxY2mncS"
+                target="_blank"
+                class="projectbutton"
+                >View Project<i class="fa-solid fa-up-right-from-square"></i
+              ></a>
             </div>
           </div>
           <div class="project2">
@@ -157,9 +192,12 @@
                 <span>A complete app redesign</span>
                 <!-- <hr> -->
               </div>
-              <a href="https://google.com" class="projectbutton"
-                >View Project</a
-              >
+              <a
+                href="https://tr.ee/cGbdAdVS1W"
+                class="projectbutton"
+                target="_blank"
+                >View Project<i class="fa-solid fa-up-right-from-square"></i
+              ></a>
             </div>
           </div>
         </div>
@@ -178,9 +216,12 @@
                 <span>A luxurious and vintage hotel website.</span>
                 <!-- <hr> -->
               </div>
-              <a href="https://google.com" class="projectbutton"
-                >View Project</a
-              >
+              <a
+                href="https://tr.ee/_gKim6DI8V"
+                class="projectbutton"
+                target="_blank"
+                >View Project<i class="fa-solid fa-up-right-from-square"></i
+              ></a>
             </div>
           </div>
           <div class="project4">
@@ -190,7 +231,12 @@
                 <span>Learn more of my projects here</span>
                 <!-- <hr> -->
               </div>
-              <a href="https://google.com" class="projectbutton">My Projects</a>
+              <a
+                href="https://drive.google.com/drive/folders/1CdT5_irGcrs2nZJ8gkYfXVKC7sRBkXJR?usp=drive_link"
+                class="projectbutton"
+                target="_blank"
+                >My Portfolio <i class="fa-solid fa-circle-arrow-right"></i
+              ></a>
             </div>
           </div>
         </div>
@@ -203,9 +249,13 @@
       </div>
       <div class="connectcontainer">
         <form name="submit-to-google-sheet">
-          <h3>Send Me a Message!</h3>
-          <input type="text" name="name" placeholder="Your Name" />
-          <input type="email" name="email" placeholder="Your Email" />
+          <h3>Reach Out to Me!</h3>
+          <div class="form-row">
+            <input type="text" name="name" placeholder="Your Name" />
+            <div class="vertical-line"></div>
+            <input type="email" name="email" placeholder="Your Email" />
+          </div>
+          <!-- <div class="horizontal-line"></div> -->
           <textarea
             name="message"
             id=""
@@ -213,12 +263,86 @@
             rows="5"
           ></textarea>
           <div class="button-container">
-            <button type="submit" name="submit-btn">Send Messages</button>
             <span id="msg"></span>
+            <button type="submit" name="submit-btn">
+              Send Message<i class="fa-solid fa-paper-plane"></i>
+            </button>
           </div>
         </form>
       </div>
     </section>
+
+    <footer>
+      <div class="footer-text">
+        <p><span>fin.</span></p>
+      </div>
+      <div class="social-links">
+        <a
+          href="https://www.instagram.com/benedictusyoga"
+          target="_blank"
+          class="social-button"
+        >
+          <img
+            src="images/iglogo.png"
+            alt="Instagram Logo"
+            class="social-icon"
+          />
+          <span>@benedictusyoga</span>
+          <!-- <i class="fa-solid fa-arrow-up-right-from-square"></i> -->
+        </a>
+        <div class="ver"></div>
+        <a
+          href="mailto:yogatama4561@gmail.com"
+          target="_blank"
+          class="social-button"
+        >
+          <img
+            src="images/gmaillogo.png"
+            alt="Gmail Logo"
+            ,
+            class="social-icon"
+          />
+          <span>yogatama4561@gmail.com</span>
+          <!-- <i class="fa-solid fa-arrow-up-right-from-square"></i> -->
+        </a>
+        <div class="ver"></div>
+        <a
+          href="www.linkedin.com/in/benedictus-yogatama"
+          target="_blank"
+          class="social-button"
+        >
+          <img
+            src="images/linkedinlogo.png"
+            alt="LinkedIn Logo"
+            class="social-icon"
+          />
+          <span>/in/benedictus-yogatama</span>
+          <!-- <i class="fa-solid fa-arrow-up-right-from-square"></i> -->
+        </a>
+        <div class="ver"></div>
+        <a
+          href="https://github.com/benedictusyoga/"
+          target="_blank"
+          class="social-button"
+        >
+          <img
+            src="images/githublogo.png"
+            alt="GitHub Logo"
+            class="social-icon"
+          />
+          <span>benedictusyoga</span>
+          <!-- <i class="fa-solid fa-arrow-up-right-from-square"></i> -->
+        </a>
+        <!-- Add more social buttons as needed -->
+      </div>
+      <!-- <div class="line"></div> -->
+    </footer>
+    <div class="rights">
+      <p>
+        <span>BENEDICTUS YOGATAMA FAVIAN SATYAJATI 2024</span> - All Rights
+        Reserved
+      </p>
+    </div>
 
     <!-- DELETE THIS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
     <div class="DELETETHIS">
@@ -228,5 +352,7 @@
     <!-- Scripts -->
     <script src="scripts/index-script.js"></script>
     <script src="scripts/forms-handler.js"></script>
+    <script src="scripts/animation-handler.js"></script>
+    <script src="scripts/tab-handler.js"></script>
   </body>
 </html>

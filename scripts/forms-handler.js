@@ -36,8 +36,13 @@ form.addEventListener("submit", (e) => {
 
   // If any field is empty, display error in msg span and prevent submission
   if (!isValid) {
-    msg.innerHTML = "HEY! Please fill out all the fields above!";
+    msg.innerHTML = "Please fill out all the fields above!";
     msg.style.color = "red";
+    submitButton.classList.add("wiggle");
+    submitButton.style.backgroundColor = "red";
+
+    setTimeout(() => (submitButton.style.backgroundColor = ""), 600);
+    setTimeout(() => submitButton.classList.remove("wiggle"), 300);
     return;
   }
 
