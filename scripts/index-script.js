@@ -83,3 +83,16 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+// document.querySelectorAll(".skill-item").forEach((item) => {
+//   const skillName = item.querySelector(".skill-name");
+//   const img = item.querySelector("img");
+
+//   img.addEventListener("mouseover", () => {
+//     skillName.style.display = "block";
+//   });
+
+//   img.addEventListener("mouseout", () => {
+//     skillName.style.display = "none";
+//   });
+// });

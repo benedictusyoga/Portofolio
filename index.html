@@ -95,45 +95,301 @@
           </p>
           <div class="tab-section">
             <div class="tab-menu">
-              <button
-                class="tab-link active"
-                onclick="openTab(event, 'skills')"
-              >
-                Skills
-              </button>
-              <button class="tab-link" onclick="openTab(event, 'experience')">
-                Experience
-              </button>
-              <button class="tab-link" onclick="openTab(event, 'education')">
+              <button class="tab-link active" onclick="openTab(event, 'education')">
                 Education
               </button>
+              <button
+                class="tab-link"
+                onclick="openTab(event, 'experience')"
+              >
+                Experience
+              </button>
+              <button class="tab-link" onclick="openTab(event, 'skills')">
+                Skills
+              </button>
+              
             </div>
             <div class="tab-content">
-              <div id="skills" class="tab-item active">
-                <p>Details about your skills...</p>
+              <div id="education" class="tab-item active">
+                <!-- <p>Details about your education...</p> -->
+                <div class="section-title">
+                  <h1>Education</h1>
+                  <p>
+                    Browse through my educational journey throughout the years.
+                  </p>
+                </div>
+                <div class="timeline">
+                  <div class="timeline-item">
+                    <div class="timeline-year">
+                      2019
+                      <hr />
+                      <p>'til 2022</p>
+                    </div>
+                    <div class="timeline-content">
+                      <h3>SMA Tarakanita Gading Serpong</h3>
+                      <p><span>High School Diploma</span> - Natural Sciences</p>
+                      <p>
+                        <b>Achievements</b>: Student Council, Top 20 Parallel
+                      </p>
+                    </div>
+                  </div>
+                  <div class="timeline-item">
+                    <div class="timeline-year">
+                      2022
+                      <hr />
+                      <p>'til 2026</p>
+                    </div>
+                    <div class="timeline-content2">
+                      <h3>Bina Nusantara University</h3>
+                      <p><span>Undergraduate</span> - Computer Science</p>
+                      <p><b>Current GPA</b>: 3.77</p>
+                    </div>
+                  </div>
+                  <!-- Add more timeline items as needed -->
+                </div>
               </div>
               <div id="experience" class="tab-item">
-                <p>Details about your experience...</p>
+                <!-- <p>Details about your experience...</p> -->
+                <div class="section-title">
+                  <h1>Experience</h1>
+                  <p>
+                    Discover the highlights of my leadership and collaborative
+                    roles within university organizations.
+                  </p>
+                </div>
+                <div class="experience">
+                  <div class="exp-top">
+                    <!-- <p>
+                      Here are some the highlights of my organizational
+                      experience in University:
+                    </p> -->
+                    <div class="current">
+                      <div class="exp-year">Current</div>
+                      <div class="exp-content-curr">
+                        <h2>Media and Communications Activist</h2>
+                        <h3>Keluarga Mahasiswa Katolik BINUS University</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="exp-bot">
+                    <div class="exp-item">
+                      <div class="exp-year">Sep 2023 - Jun 2024</div>
+                      <div class="exp-content">
+                        <h2>Freshmen Partner | FYP B27</h2>
+                        <h3>BINUS University</h3>
+                      </div>
+                    </div>
+                    <div class="exp-item">
+                      <div class="exp-year">Jun 2023 - Sep 2023</div>
+                      <div class="exp-content">
+                        <h2>Freshmen Leader | FYP B27</h2>
+                        <h3>BINUS University</h3>
+                      </div>
+                    </div>
+                    <div class="exp-item">
+                      <div class="exp-year">Jul 2024 - Sep 2024</div>
+                      <div class="exp-content">
+                        <h2>Regional Project Manager</h2>
+                        <h3>
+                          Penerimaan Mahasiswa Baru Keluarga Mahasiswa Katolik
+                          BINUS University
+                        </h3>
+                      </div>
+                    </div>
+                    <div class="exp-item">
+                      <div class="exp-year">2022 - 2023</div>
+                      <div class="exp-content">
+                        <h2>Education Counselor</h2>
+                        <h3>BINUS University</h3>
+                      </div>
+                    </div>
+                    <a
+                      href="https://www.linkedin.com/in/benedictus-yogatama/"
+                      class="exp-btn"
+                      >Read More About my Experiences Here
+                      <i class="fa-solid fa-up-right-from-square"></i
+                    ></a>
+                  </div>
+                </div>
               </div>
-              <div id="education" class="tab-item">
-                <!-- <p>Details about your education...</p> -->
-                <div class="education-timeline">
-                  <div class="timeline-container">
-                    <div class="timeline-item">
-                      <div class="date">2019 - 2022</div>
-                      <div class="info">
-                        <strong>Natural Sciences</strong> - SMA Tarakanita G.S.
-                        <p>Achieved 14th Parallel Ranking</p>
+              <div id="skills" class="tab-item">
+                <!-- <p>Details about your skills...</p> -->
+                <div class="section-title">
+                  <h1>Skills</h1>
+                  <p>
+                    Explore the key skills I've developed through academic
+                    projects and hands-on experience at University.
+                  </p>
+                </div>
+                <div class="skills-container">
+                  <!-- <h2>Highlights</h2> -->
+                  <div class="highlights-container">
+                    <!-- <div class="highlights-text">
+                      <h2>Highlights</h2>
+                      <p>
+                        These are some of the tools and skills that I can
+                        confidently say I'm proficient in
+                      </p>
+                    </div> -->
+                    <!-- <h1>Highlights</h1> -->
+                    <div class="highlights-item">
+                      <div class="highlights-content">
+                        <img src="images/logos/HD/figma.png" alt="Figma" />
+                        <span>Figma</span>
                       </div>
                     </div>
-                    <div class="timeline-line"></div>
-                    <div class="timeline-item">
-                      <div class="date">2022 - Current</div>
-                      <div class="info">
-                        <strong>Computer Science</strong> - Binus University
-                        <p>Current GPA <strong>3.77</strong></p>
+                    <div class="highlights-item">
+                      <div class="highlights-content">
+                        <img src="images/logos/HD/vscode.png" alt="VSCode" />
+                        <span>Visual Studio Code</span>
                       </div>
                     </div>
+                    <div class="highlights-item">
+                      <div class="highlights-content">
+                        <img
+                          src="images/logos/HD/photoshop.png"
+                          alt="Photoshop"
+                        />
+                        <span>Adobe Products</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="percentage-container">
+                    <div class="unexplored">
+                      <div class="unexplored-title">
+                        <h2>My New and Ongoingly Developed Skills</h2>
+                      </div>
+                      <div class="unexplored-skills">
+                        <div class="skill-item">
+                          <img
+                            src="images/logos/Code/react.png"
+                            alt=""
+                            class="skill-logo"
+                          />
+                          <span class="skill-name">React</span>
+                          <div class="skill-info2">
+                            <span class="skill-percentage">45%</span>
+                          </div>
+                          <div class="progress-bar">
+                            <div class="progress-fill" style="width: 45%"></div>
+                          </div>
+                        </div>
+                        <div class="skill-item">
+                          <img
+                            src="images/logos/Code/swift.png"
+                            alt=""
+                            class="skill-logo"
+                          />
+                          <span class="skill-name">Swift</span>
+                          <div class="skill-info2">
+                            <span class="skill-percentage">15%</span>
+                          </div>
+                          <div class="progress-bar">
+                            <div class="progress-fill" style="width: 15%"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="skill-item">
+                      <img
+                        src="images/logos/Code/html.png"
+                        alt=""
+                        class="skill-logo"
+                      />
+                      <span class="skill-name">HTML</span>
+                      <div class="skill-info">
+                        <span class="skill-percentage">90%</span>
+                      </div>
+                      <div class="progress-bar">
+                        <div class="progress-fill" style="width: 90%"></div>
+                      </div>
+                    </div>
+                    <div class="skill-item">
+                      <img
+                        src="images/logos/Code/css.png"
+                        alt=""
+                        class="skill-logo"
+                      />
+                      <span class="skill-name">CSS</span>
+                      <div class="skill-info">
+                        <span class="skill-percentage">87%</span>
+                      </div>
+                      <div class="progress-bar">
+                        <div class="progress-fill" style="width: 87%"></div>
+                      </div>
+                    </div>
+                    <div class="skill-item">
+                      <img
+                        src="images/logos/Code/js.png"
+                        alt=""
+                        class="skill-logo"
+                      />
+                      <span class="skill-name">Javascript</span>
+                      <div class="skill-info">
+                        <span class="skill-percentage">80%</span>
+                      </div>
+                      <div class="progress-bar">
+                        <div class="progress-fill" style="width: 80%"></div>
+                      </div>
+                    </div>
+                    <div class="skill-item">
+                      <img
+                        src="images/logos/Code/c-.png"
+                        alt=""
+                        class="skill-logo"
+                      />
+                      <span class="skill-name">C</span>
+                      <div class="skill-info">
+                        <span class="skill-percentage">89%</span>
+                      </div>
+                      <div class="progress-bar">
+                        <div class="progress-fill" style="width: 89%"></div>
+                      </div>
+                    </div>
+                    <div class="skill-item">
+                      <img
+                        src="images/logos/Code/c-sharp.png"
+                        alt=""
+                        class="skill-logo"
+                      />
+                      <span class="skill-name">C#</span>
+                      <div class="skill-info">
+                        <span class="skill-percentage">80%</span>
+                      </div>
+                      <div class="progress-bar">
+                        <div class="progress-fill" style="width: 80%"></div>
+                      </div>
+                    </div>
+                    <div class="skill-item">
+                      <img
+                        src="images/logos/Code/java.png"
+                        alt=""
+                        class="skill-logo"
+                      />
+                      <span class="skill-name">Java</span>
+                      <div class="skill-info">
+                        <span class="skill-percentage">88%</span>
+                      </div>
+                      <div class="progress-bar">
+                        <div class="progress-fill" style="width: 88%"></div>
+                      </div>
+                    </div>
+                    <div class="skill-item">
+                      <img
+                        src="images/logos/Code/python.png"
+                        alt=""
+                        class="skill-logo"
+                      />
+                      <span class="skill-name">Python</span>
+                      <div class="skill-info">
+                        <span class="skill-percentage">82%</span>
+                      </div>
+                      <div class="progress-bar">
+                        <div class="progress-fill" style="width: 82%"></div>
+                      </div>
+                    </div>
+                    
                   </div>
                 </div>
               </div>
@@ -307,7 +563,7 @@
         </a>
         <div class="ver"></div>
         <a
-          href="www.linkedin.com/in/benedictus-yogatama"
+          href="https://www.linkedin.com/in/benedictus-yogatama/"
           target="_blank"
           class="social-button"
         >
@@ -331,6 +587,20 @@
             class="social-icon"
           />
           <span>benedictusyoga</span>
+          <!-- <i class="fa-solid fa-arrow-up-right-from-square"></i> -->
+        </a>
+        <div class="ver"></div>
+        <a
+          href="https://wa.me/6281383781904"
+          target="_blank"
+          class="social-button"
+        >
+          <img
+            src="images/whatsapplogo.png"
+            alt="WhatsApp Logo"
+            class="social-icon"
+          />
+          <span>+62 813 8378 1904</span>
           <!-- <i class="fa-solid fa-arrow-up-right-from-square"></i> -->
         </a>
         <!-- Add more social buttons as needed -->

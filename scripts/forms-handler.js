@@ -46,9 +46,10 @@ form.addEventListener("submit", (e) => {
     return;
   }
 
-  // Change button color when clicked
-  submitButton.style.backgroundColor = "#363636"; // Change button color
+  // Change button color when clicked and set cursor to "progress"
+  submitButton.style.backgroundColor = "#363636";
   submitButton.style.color = "white";
+  document.body.style.cursor = "progress"; // Change cursor to progress
 
   // Proceed with form submission
   fetch(scriptURL, { method: "POST", body: new FormData(form) })
@@ -69,5 +70,8 @@ form.addEventListener("submit", (e) => {
       msg.style.color = "red";
       submitButton.style.backgroundColor = ""; // Reset button color on error
       console.error("Error!", error.message);
+    })
+    .finally(() => {
+      document.body.style.cursor = ""; // Reset cursor to default
     });
 });

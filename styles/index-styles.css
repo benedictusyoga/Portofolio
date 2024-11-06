@@ -150,7 +150,7 @@ body {
 .line1 {
     color: #363636;
     position: absolute;
-    margin-top: -5%;
+    margin-top: -3%;
     width: 50%;
 }
 
@@ -315,8 +315,8 @@ body {
 
 .aboutphoto img {
     object-fit: contain;
-    margin-left: 20%;
-    width: 30vw;
+    margin-left: 14%;
+    width: 33vw;
     display: block;
 }
 
@@ -357,28 +357,15 @@ body {
 .aboutbody {
     /* background-color: #363636; */
     /* position: absolute; */
-    margin-top: 15%;
+    margin-top: 12%;
     padding-top: 2%;
     /* padding-right: 8%; */
-    margin-right: 5%;
+    margin-right: 9%;
     border-radius: 50px;
     padding-left: 8%;
     /* padding-bottom: 5%; */
-    margin-bottom: 8%;
+    margin-bottom: 90px;
     z-index: 50;
-}
-
-.aboutbody h4 {
-    /* text-align: right; */
-    font-family: "Montserrat", sans-serif;
-    letter-spacing: 0.1vw;
-    position: absolute;
-    z-index: -10;
-    margin-left: -2%;
-    margin-top: -1.5%;
-    font-size: 2.7vw;
-    font-weight: 800;
-    color: #d2d2d20f;
 }
 
 .aboutbody p {
@@ -405,8 +392,9 @@ body {
 
 .tab-menu {
     display: flex;
+    margin-top: 3.5%;
     flex-direction: column;
-    width: 14%;
+    width: 17%;
     /* margin-right: 5%; */
 }
 
@@ -455,16 +443,17 @@ body {
 }
 
 .tab-content {
-    width: 70%;
+    width: 100%;
     /* margin-left: 10%; */
-    padding: 1em;
+    padding: 5em 1em;
     /* background-color: #222; */
     background: rgb(34, 34, 34);
     background: linear-gradient(90deg, rgba(34, 34, 34, 1) 50%, rgba(34, 34, 34, 0) 100%);
-    border-radius: 0px 0em 0em 2em;
+
+    border-radius: 2em 0em 0em 2em;
     color: #d2d2d2;
     font-size: 0.9vw;
-    min-height: 15vw;
+    min-height: 26vw;
     display: flex;
     justify-content: flex-start;
     border: none;
@@ -480,75 +469,516 @@ body {
     display: block;
 }
 
-.education-timeline {
-    text-align: center;
-    align-items: center;
-    /* display: flex; */
-    /* margin-top: 40px; */
+.section-title {
+    display: flex;
+    flex-direction: column;
+    margin: 1vw 3vw;
+    width: 100%;
+    ;
+    margin-top: 0;
+    font-size: 2vw;
 }
 
-.timeline-container {
+.section-title p {
+    font-size: 0.7vw;
+    /* letter-spacing: -0.05vw; */
+}
+
+.skills-container {
+    margin-left: 7%;
+    /* display: flex; */
+    /* flex-direction: column; */
+    width: 100%;
+}
+
+.highlights-container {
+    /* background: rgb(16, 16, 16);
+    background: linear-gradient(128deg, rgba(16, 16, 16, 1) 0%, rgba(54, 54, 54, 1) 50%, rgba(16, 16, 16, 1) 100%); */
+    /* border: groove 0.2px white; */
+    /* border-radius: 1.5em; */
+    padding: 1% 17%;
+    padding-left: 0vh;
+    /* padding-top: 10%; */
+    width: 100%;
     display: flex;
     /* flex-direction: row; */
-    align-items: center;
+    gap: 3vh;
+    /* border-radius: 1em; */
+    /* margin-bottom: 2em; */
+    /* text-align: center; */
+    /* background-color: white; */
+    /* padding-top: 5vw; */
+}
+
+.highlights-item {
+    display: flex;
+    /* flex-direction: column; */
     justify-content: center;
-    position: relative;
-    width: 80%;
-    height: 100%;
-    /* margin-top: 50px; */
-    /* margin-bottom: 10%; */
     align-items: center;
+    border: groove 1px white;
+    /* padding: 3em 1.8em 5em 1.8em; */
+    padding: 0.8em;
+    padding-left: 1.6em;
+    padding-right: 1.6em;
+    height: 15vw;
+    width: 100%;
+    border-radius: 6em;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    box-shadow: 0 10px 20px #00000068;
+    /* transform-origin: center; */
+}
+
+.highlights-item:hover {
+    transform: translateY(-2%);
+    /* height: 16vw; */
+    /* margin-top: -0.5vw; */
+    /* margin-bottom: -0.5vw; */
+}
+
+.highlights-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.highlights-content img {
+    -webkit-filter: drop-shadow(5px 5px 5px #222);
+    filter: drop-shadow(5px 5px 5px #222);
+    width: 6vw;
+    transition: transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.highlights-content span {
+    margin-top: 1vh;
+    font-size: 1.2vh;
+    text-align: center;
+}
+
+.highlights-item:hover img {
+    transform: translateY(-6%);
+}
+
+.percentage-container {
+    width: 100%;
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    gap: 0.6em;
+    /* margin-top: 2em; */
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    gap: 0.4em;
+    width: 48%;
+    position: relative;
+}
+
+.skill-logo {
+
+    width: 1.8em;
+    height: 1.8em;
+    transition: transform 0.3s ease;
+}
+
+.skill-logo:hover {
+    transform: scale(1.1);
+}
+
+.progress-bar {
+    margin-right: 5%;
+    width: 100%;
+    height: 0.2em;
+    background-color: #5b5b5b;
+    border-radius: 0em 0.5em 0.5em 0em;
+    overflow: visible;
+    position: relative;
+    z-index: 0;
+}
+
+.progress-fill {
+    height: 100%;
+    background-color: #D138D6;
+    border-radius: 0em 0 0 0em;
+    transition: width 1s ease-in-out;
+    position: relative;
+}
+
+.progress-fill::after {
+    content: '';
+    width: 0.8em;
+    /* Adjust size as needed */
+    height: 0.8em;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: -0.3em;
+    /* Adjust vertical positioning */
+    right: -0.1em;
+    /* Position at the end */
+    z-index: 1;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+    /* Make sure it appears above the progress fill */
+}
+
+.skill-info {
+    /* display: flex; */
+    position: absolute;
+    /* justify-content: space-between; */
+    top: -0.8em;
+    right: -17em;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateY(0.3em);
+    padding: 0 0.5em;
+    padding-left: 2.5em;
+    padding-right: 1.5em;
+}
+
+.skill-info2 {
+    /* display: flex; */
+    position: absolute;
+    /* justify-content: space-between; */
+    top: -0.5em;
+    right: -15em;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    transform: translateY(0.3em);
+    padding: 0 0.5em;
+    padding-left: 2.5em;
+    padding-right: 1.5em;
+}
+
+.skill-info span:hover {
+    color: #d2d2d2;
+}
+
+
+
+.skill-name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.skill-percentage {
+    font-size: 0.7em;
+    font-weight: 600;
+
+
+}
+
+.skill-item:hover .skill-info {
+    opacity: 1;
+    transform: translateY(0);
+    /* z-index: 500; */
+    /* Slight floating effect */
+}
+
+.skill-item:hover .skill-info2 {
+    opacity: 1;
+    transform: translateY(0);
+    /* z-index: 500; */
+    /* Slight floating effect */
+}
+
+.unexplored {
+    width: 100%;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    border: solid 1px white;
+    /* background: rgb(16, 16, 16);
+    background: linear-gradient(128deg, rgba(16, 16, 16, 1) 0%, rgba(54, 54, 54, 1) 50%, rgba(16, 16, 16, 1) 100%); */
+    padding: 2%;
+    padding-left: 6%;
+    border-radius: 1em;
+}
+
+.unexplored-skills {
+    display: flex;
+    flex-direction: row;
+}
+
+.unexplored-title {
+    font-size: 0.6vw;
+    margin-bottom: 15px;
+    opacity: 0.5;
+    text-align: center;
+}
+
+.unexplored-title h2 {
+    font-weight: 600;
+}
+
+/* Progress bar background */
+
+/* Progress fill bar */
+
+
+
+
+
+
+
+.experience {
+    /* Space between items */
+    /* margin: 10px 0; */
+    /* width: 100%; */
+    margin-left: 7%;
+    /* margin-right: %; */
+    /* width: 105%; */
+    /* Margin around the experience section */
+}
+
+.experience p {
+    margin-bottom: 1%;
+}
+
+.current {
+    /* width: 90%; */
+    margin-bottom: 2%;
+    margin-top: 1%;
+    z-index: 100;
+    padding: 4%;
+    /* background: rgb(16, 16, 16);
+    background: linear-gradient(128deg, rgba(16, 16, 16, 1) 0%, rgba(54, 54, 54, 1) 50%, rgba(16, 16, 16, 1) 100%); */
+    border: groove 2px white;
+    /* background: rgb(34, 34, 34);
+    background: linear-gradient(53deg, rgba(34, 34, 34, 1) 5%, rgba(34, 34, 34, 0.5620448863139005) 12%, rgba(34, 34, 34, 0) 35%, rgba(34, 34, 34, 0.7077031496192228) 54%, rgba(34, 34, 34, 1) 72%, rgba(34, 34, 34, 1) 78%, rgba(34, 34, 34, 0) 91%); */
+}
+
+.exp-content-curr {
+    font-size: 1.2vw;
+}
+
+.exp-content-curr h3 {
+    font-weight: 400;
+}
+
+.exp-bot {
+    display: flex;
+    width: 90%;
+    /* width: 110%; */
+    flex-wrap: wrap;
+    /* margin-left: 3%; */
+    /* Allows items to wrap into the next row */
+    gap: 10px;
+}
+
+.exp-item {
+    /* width: 50%; */
+    flex: 1 1 calc(50% - 20px);
+    /* Two columns with some spacing */
+    /* background: rgb(34, 34, 34); */
+    border-radius: 5px;
+    /* margin-right: 2%; */
+    /* padding: 2px; */
+    color: #d2d2d2;
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 5px; */
+    /* Smooth transition for scaling and shadow */
+    /* Set the transform origin to the left */
+}
+
+.exp-year {
+    font-weight: bold;
+    font-size: 0.75vw;
+    color: #D138D6;
+    /* Change the color as needed */
+}
+
+.exp-content h2 {
+    /* margin: 5px 0; */
+    font-size: 0.9vw;
+}
+
+.exp-content h3 {
+    margin: 0;
+    color: #9a9a9a;
+    font-size: 0.6vw;
+    font-weight: 400;
+    /* Change the color as needed */
+}
+
+.exp-btn {
+    padding: 1.1% 4%;
+    width: 80%;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    margin-top: 1%;
+    background-color: #d2d2d2;
+    border-radius: 50px;
+    font-weight: 400;
+    color: #171717;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 10px 20px #00000068;
+}
+
+.exp-btn i {
+    margin-left: 2%;
+    align-self: center;
+}
+
+.exp-btn:hover {
+    background-color: #D138D6;
+    box-shadow: 0 2px 10px #00000068;
+    color: #ffffff;
+    /* transform: scale(0.98); */
+    transform: translateY(7%);
+}
+
+
+.timeline {
+    position: relative;
+    padding: 20px 0;
+    margin-left: 170px;
+    /* Adjust this to create space for the line */
+}
+
+.timeline:before {
+    content: '';
+    position: absolute;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    left: 3vh;
+    /* Adjust this to position the line */
+    top: 0;
+    bottom: 0;
+    border-radius: 50%;
+    width: 2px;
+    /* Width of the line */
+    background-color: #D138D6;
+    /* Color of the line */
 }
 
 .timeline-item {
-    text-align: center;
     position: relative;
-    width: 20em;
-    margin-top: 70px;
+    margin: 1.3% 0;
 }
 
-.date {
-    font-size: 0.7vw;
-    color: #bbb;
-    margin-bottom: 5px;
-}
 
-.info {
-    /* align-items: center; */
-    font-size: 1vw;
-    line-height: 1.4;
-}
-
-.info p {
-    font-size: 0.9vw;
-    color: #bbb;
-    text-align: center;
-    margin-top: 5px;
-}
-
-.timeline-line {
-    position: absolute;
-    top: 50px;
-    left: 0;
-    right: 0;
-    height: 3px;
-    background-color: #a041e8;
-    z-index: -1;
-}
-
-.timeline-item::before {
+.timeline-item:after {
     content: '';
-    width: 10px;
-    height: 10px;
-    background-color: #a041e8;
-    border-radius: 50%;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 2.4vh;
+    /* Position the dot */
+    top: 5px;
+    /* Align the dot with the timeline item */
+    width: 12px;
+    /* Width of the dot */
+    height: 12px;
+    /* Height of the dot */
+    background-color: #D138D6;
+    /* Color of the dot */
+    border-radius: 50%;
+    /* Makes the dot circular */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    /* Optional shadow for the dot */
+}
+
+.timeline-year {
+    position: absolute;
+    left: -7.5rem;
+    /* Adjust this value to position the year */
+    font-weight: bold;
+    font-size: 3rem;
+    text-align: right;
+    justify-content: right;
+    font-family: "Libre Baskerville", serif;
+    /* border-bottom: solid #363636 2px; */
+    font-style: italic;
+    color: #d2d2d2;
+    /* Change the color as needed */
+}
+
+.timeline-year p {
+    font-family: 'Montserrat', sans-serif;
+    text-align: right;
+    color: #5b5b5b;
+    font-style: normal;
+}
+
+.timeline-year hr {
+    border-top: solid 2px #363636;
+    border-bottom: none;
+    border-right: none;
+    border-left: none;
+}
+
+.timeline-content {
+    background: rgb(34, 34, 34);
+    width: 100%;
+    font-size: 1vw;
+    border-radius: 0px 50px 50px 0px;
+    padding: 15px;
+    padding-right: 5em;
+    margin-left: 50px;
+    /* Space between year and content */
+    color: #d2d2d2;
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 5px; */
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform-origin: left;
+}
+.timeline-content2 {
+    /* background: rgb(34, 34, 34); */
+    width: 100%;
+    font-size: 1.2vw;
+    border-radius: 0px 50px 50px 0px;
+    border: solid 1px white;
+    padding: 15px;
+    padding-right: 5em;
+    margin-left: 50px;
+    /* Space between year and content */
+    color: #d2d2d2;
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 5px; */
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform-origin: left;
+}
+
+.timeline-content:hover {
+    transform: scale(1.01);
+}
+.timeline-content2:hover {
+    transform: scale(1.05);
 }
 
 
+.timeline-content p {
+    font-size: 0.6vw;
+}
+.timeline-content2 p {
+    font-size: 0.8vw;
+}
+
+.timeline-content h3 {
+
+    padding-bottom: 1%;
+    margin-bottom: 2%;
+    border-bottom: solid 2px #363636;
+    color: #D138D6;
+    /* Change the color as needed */
+}
+.timeline-content2 h3 {
+
+    padding-bottom: 1%;
+    margin-bottom: 2%;
+    border-bottom: solid 2px #363636;
+    color: #D138D6;
+    /* Change the color as needed */
+}
+
+.timeline-content span {
+    font-weight: 600;
+}
+.timeline-content2 span {
+    font-weight: 800;
+}
 
 
 
@@ -556,7 +986,7 @@ body {
 
 /* Projects Page */
 .projectspage {
-    margin-top: 2vw;
+    /* margin-top: 1vw; */
     font-family: "Montserrat", sans-serif;
     color: #d2d2d2;
     /* background-color: #363636; */
@@ -695,7 +1125,7 @@ body {
     padding: 2% 4% 2% 1%;
     font-size: 0.8vw;
     /* border-radius: 20px 0px 0px 20px; */
-    margin-top: 170px;
+    margin-top: 10%;
     z-index: -100;
     position: absolute;
 }
